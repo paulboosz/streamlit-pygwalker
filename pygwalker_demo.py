@@ -4,10 +4,10 @@ import streamlit.components.v1 as components
 import streamlit as st
 
 # Adjust the width of the Streamlit page
-st.set_page_config(page_title="Ecobalyse - Suivi des modifs", layout="wide")
+st.set_page_config(page_title="Ecobalyse - Suivi des scores", layout="wide")
 
 # Add Title
-st.title("Ecobalyse - Suivi des modifs")
+st.title("Ecobalyse - Suivi des scores")
 
 # Import your data
 df = pd.read_csv("textile_consolidated.csv")
