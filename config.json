@@ -77,7 +77,8 @@
           "fid": "gw_mea_key_fid",
           "name": "Measure names",
           "analyticType": "dimension",
-          "semanticType": "nominal"
+          "semanticType": "nominal",
+          "offset": 0
         }
       ],
       "measures": [
@@ -123,7 +124,8 @@
             "op": "one",
             "params": [],
             "as": "gw_count_fid"
-          }
+          },
+          "offset": 0
         },
         {
           "dragId": "gw_mea_val_fid",
@@ -131,7 +133,8 @@
           "name": "Measure values",
           "analyticType": "measure",
           "semanticType": "quantitative",
-          "aggName": "sum"
+          "aggName": "sum",
+          "offset": 0
         }
       ],
       "rows": [
@@ -237,8 +240,8 @@
       "zeroScale": true,
       "size": {
         "mode": "auto",
-        "height": 325,
-        "width": 563
+        "width": 563,
+        "height": 325
       },
       "format": {},
       "geoKey": "name",
@@ -252,6 +255,833 @@
       }
     },
     "visId": "gw_8pZB",
-    "name": "Chart 1"
+    "name": "Historique scores par lifeCycleStep"
+  },
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": ["auto"],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "dragId": "gw_6BzJ",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_sD7R",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_J0bg",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_nvA2",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_QQdp",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_a2lQ",
+          "fid": "lifeCycleStepCountry",
+          "name": "lifeCycleStepCountry",
+          "basename": "lifeCycleStepCountry",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_oXV1",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_key_fid",
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal",
+          "offset": 0
+        }
+      ],
+      "measures": [
+        {
+          "dragId": "gw_fUJ3",
+          "fid": "mass",
+          "name": "mass",
+          "basename": "mass",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_m2vR",
+          "fid": "value",
+          "name": "value",
+          "basename": "value",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_DzOh",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_count_fid",
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          },
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_val_fid",
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "rows": [
+        {
+          "dragId": "gw_UevY",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "dragId": "gw_D7-C",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_oNk3",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "dragId": "gw_qob6",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "dragId": "gw_RdYz",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["2023-09-25"]
+          }
+        },
+        {
+          "dragId": "gw_-V5P",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["chemise", "jean"]
+          }
+        },
+        {
+          "dragId": "gw__3t8",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": []
+          }
+        },
+        {
+          "dragId": "gw_yr_q",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": ["[{'id': 'pet', 'share': 1}]"]
+          }
+        },
+        {
+          "dragId": "gw_8o4Q",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": []
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "height": 423,
+        "width": 462
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      }
+    },
+    "visId": "gw_pQ_4",
+    "name": "PR340 vs Master. Par impact"
+  },
+
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": ["auto"],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "dragId": "gw_6BzJ",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_sD7R",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_J0bg",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_nvA2",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_QQdp",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_a2lQ",
+          "fid": "lifeCycleStepCountry",
+          "name": "lifeCycleStepCountry",
+          "basename": "lifeCycleStepCountry",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_oXV1",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_key_fid",
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal",
+          "offset": 0
+        }
+      ],
+      "measures": [
+        {
+          "dragId": "gw_fUJ3",
+          "fid": "mass",
+          "name": "mass",
+          "basename": "mass",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_m2vR",
+          "fid": "value",
+          "name": "value",
+          "basename": "value",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_DzOh",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_count_fid",
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          },
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_val_fid",
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "rows": [
+        {
+          "dragId": "gw_UevY",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "dragId": "gw_D7-C",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_pN1D",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "dragId": "gw_sLPr",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "dragId": "gw__3t8",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": ["pr351", "pr340", "pr371"]
+          }
+        },
+        {
+          "dragId": "gw_yr_q",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": ["[{'id': 'pet', 'share': 1}]"]
+          }
+        },
+        {
+          "dragId": "gw_8o4Q",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": []
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 563,
+        "height": 325
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      }
+    },
+    "visId": "gw_8pZB",
+    "name": "Historique scores par lifeCycleStep"
+  },
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": ["auto"],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "dragId": "gw_6BzJ",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_sD7R",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_J0bg",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_nvA2",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_QQdp",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_a2lQ",
+          "fid": "lifeCycleStepCountry",
+          "name": "lifeCycleStepCountry",
+          "basename": "lifeCycleStepCountry",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_oXV1",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_key_fid",
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal",
+          "offset": 0
+        }
+      ],
+      "measures": [
+        {
+          "dragId": "gw_fUJ3",
+          "fid": "mass",
+          "name": "mass",
+          "basename": "mass",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_m2vR",
+          "fid": "value",
+          "name": "value",
+          "basename": "value",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_DzOh",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_count_fid",
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          },
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_val_fid",
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "rows": [
+        {
+          "dragId": "gw_UevY",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "dragId": "gw_D7-C",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_oNk3",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "dragId": "gw_qob6",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "dragId": "gw_RdYz",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["2023-09-25"]
+          }
+        },
+        {
+          "dragId": "gw_-V5P",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["chemise", "jean"]
+          }
+        },
+        {
+          "dragId": "gw__3t8",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": []
+          }
+        },
+        {
+          "dragId": "gw_yr_q",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": ["[{'id': 'pet', 'share': 1}]"]
+          }
+        },
+        {
+          "dragId": "gw_8o4Q",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": []
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "height": 423,
+        "width": 462
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      }
+    },
+    "visId": "gw_pQ_4",
+    "name": "PR340 vs Master. Par impact"
   }
 ]
