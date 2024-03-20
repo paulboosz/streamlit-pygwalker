@@ -408,16 +408,26 @@
           "offset": 0
         },
         {
-          "dragId": "gw_oNk3",
-          "fid": "branch",
-          "name": "branch",
-          "basename": "branch",
+          "dragId": "gw_pN1D",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
           "semanticType": "nominal",
           "analyticType": "dimension",
           "offset": 0
         }
       ],
-      "color": [],
+      "color": [
+        {
+          "dragId": "gw_sLPr",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
       "opacity": [],
       "size": [],
       "shape": [],
@@ -429,32 +439,6 @@
       "details": [],
       "filters": [
         {
-          "dragId": "gw_RdYz",
-          "fid": "date",
-          "name": "date",
-          "basename": "date",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0,
-          "rule": {
-            "type": "one of",
-            "value": ["2023-09-25"]
-          }
-        },
-        {
-          "dragId": "gw_-V5P",
-          "fid": "product",
-          "name": "product",
-          "basename": "product",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0,
-          "rule": {
-            "type": "one of",
-            "value": ["chemise", "jean"]
-          }
-        },
-        {
           "dragId": "gw__3t8",
           "fid": "branch",
           "name": "branch",
@@ -464,7 +448,7 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": []
+            "value": ["pr351", "pr340", "pr371"]
           }
         },
         {
@@ -503,9 +487,9 @@
       "interactiveScale": false,
       "zeroScale": true,
       "size": {
-        "mode": "fixed",
-        "width": 462,
-        "height": 423
+        "mode": "auto",
+        "width": 563,
+        "height": 325
       },
       "format": {},
       "geoKey": "name",
@@ -518,8 +502,8 @@
         "size": false
       }
     },
-    "visId": "gw_pQ_4",
-    "name": "PR340 vs Master"
+    "visId": "gw_8pZB",
+    "name": "Historique scores par product par lifeCycleStep"
   },
   {
     "config": {
@@ -682,26 +666,16 @@
           "offset": 0
         },
         {
-          "dragId": "gw_pN1D",
-          "fid": "date",
-          "name": "date",
-          "basename": "date",
+          "dragId": "gw_oNk3",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
           "semanticType": "nominal",
           "analyticType": "dimension",
           "offset": 0
         }
       ],
-      "color": [
-        {
-          "dragId": "gw_sLPr",
-          "fid": "lifeCycleStep",
-          "name": "lifeCycleStep",
-          "basename": "lifeCycleStep",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0
-        }
-      ],
+      "color": [],
       "opacity": [],
       "size": [],
       "shape": [],
@@ -713,6 +687,32 @@
       "details": [],
       "filters": [
         {
+          "dragId": "gw_RdYz",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["2023-09-25"]
+          }
+        },
+        {
+          "dragId": "gw_-V5P",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": ["chemise", "jean"]
+          }
+        },
+        {
           "dragId": "gw__3t8",
           "fid": "branch",
           "name": "branch",
@@ -722,7 +722,7 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["pr351", "pr340", "pr371"]
+            "value": []
           }
         },
         {
@@ -761,9 +761,9 @@
       "interactiveScale": false,
       "zeroScale": true,
       "size": {
-        "mode": "auto",
-        "width": 563,
-        "height": 325
+        "mode": "fixed",
+        "width": 462,
+        "height": 423
       },
       "format": {},
       "geoKey": "name",
@@ -776,9 +776,10 @@
         "size": false
       }
     },
-    "visId": "gw_8pZB",
-    "name": "Historique scores par product par lifeCycleStep"
+    "visId": "gw_pQ_4",
+    "name": "PR340 vs Master"
   },
+
   {
     "config": {
       "defaultAggregated": true,
