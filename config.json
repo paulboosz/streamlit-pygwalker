@@ -169,17 +169,7 @@
           "offset": 0
         }
       ],
-      "color": [
-        {
-          "dragId": "gw_sLPr",
-          "fid": "lifeCycleStep",
-          "name": "lifeCycleStep",
-          "basename": "lifeCycleStep",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0
-        }
-      ],
+      "color": [],
       "opacity": [],
       "size": [],
       "shape": [],
@@ -255,7 +245,7 @@
       }
     },
     "visId": "gw_8pZB",
-    "name": "Historique scores par lifeCycleStep"
+    "name": "Historique ecoscore par product"
   },
   {
     "config": {
@@ -427,17 +417,7 @@
           "offset": 0
         }
       ],
-      "color": [
-        {
-          "dragId": "gw_qob6",
-          "fid": "impact",
-          "name": "impact",
-          "basename": "impact",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0
-        }
-      ],
+      "color": [],
       "opacity": [],
       "size": [],
       "shape": [],
@@ -524,8 +504,8 @@
       "zeroScale": true,
       "size": {
         "mode": "fixed",
-        "height": 423,
-        "width": 462
+        "width": 462,
+        "height": 423
       },
       "format": {},
       "geoKey": "name",
@@ -539,9 +519,8 @@
       }
     },
     "visId": "gw_pQ_4",
-    "name": "PR340 vs Master. Par impact"
+    "name": "PR340 vs Master"
   },
-
   {
     "config": {
       "defaultAggregated": true,
@@ -798,7 +777,7 @@
       }
     },
     "visId": "gw_8pZB",
-    "name": "Historique scores par lifeCycleStep"
+    "name": "Historique scores par product par lifeCycleStep"
   },
   {
     "config": {
@@ -1067,8 +1046,8 @@
       "zeroScale": true,
       "size": {
         "mode": "fixed",
-        "height": 423,
-        "width": 462
+        "width": 462,
+        "height": 423
       },
       "format": {},
       "geoKey": "name",
@@ -1082,6 +1061,6 @@
       }
     },
     "visId": "gw_pQ_4",
-    "name": "PR340 vs Master. Par impact"
+    "name": "PR340 vs Master par impact"
   }
 ]
