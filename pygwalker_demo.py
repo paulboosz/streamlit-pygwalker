@@ -12,8 +12,15 @@ st.title("Ecobalyse Suivi des modifs")
 # Import your data
 df = pd.read_csv("textile_consolidated.csv")
 
+def load_config(file_path):
+    with open(file_path, 'r') as config_file:
+        config_str = config_file.read()
+    return config_str
+  
+config = load_config('config.json')
+
 # Generate the HTML using Pygwalker
-pyg_html = pyg.to_html(df)
+pyg_html = pyg.to_html(df, spec=config)
 
 # Embed the HTML into the Streamlit app
 components.html(pyg_html, height=1000, scrolling=True)
