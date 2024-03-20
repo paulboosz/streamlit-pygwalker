@@ -2,7 +2,9 @@
   {
     "config": {
       "defaultAggregated": true,
-      "geoms": ["auto"],
+      "geoms": [
+        "auto"
+      ],
       "coordSystem": "generic",
       "limit": -1,
       "timezoneDisplayOffset": 0
@@ -190,7 +192,11 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["pr351", "pr340", "pr371"]
+            "value": [
+              "pr351",
+              "pr340",
+              "pr371"
+            ]
           }
         },
         {
@@ -203,7 +209,9 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["[{'id': 'pet', 'share': 1}]"]
+            "value": [
+              "[{'id': 'pet', 'share': 1}]"
+            ]
           }
         },
         {
@@ -250,7 +258,9 @@
   {
     "config": {
       "defaultAggregated": true,
-      "geoms": ["auto"],
+      "geoms": [
+        "auto"
+      ],
       "coordSystem": "generic",
       "limit": -1,
       "timezoneDisplayOffset": 0
@@ -448,7 +458,11 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["pr351", "pr340", "pr371"]
+            "value": [
+              "pr351",
+              "pr340",
+              "pr371"
+            ]
           }
         },
         {
@@ -461,7 +475,9 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["[{'id': 'pet', 'share': 1}]"]
+            "value": [
+              "[{'id': 'pet', 'share': 1}]"
+            ]
           }
         },
         {
@@ -508,7 +524,9 @@
   {
     "config": {
       "defaultAggregated": true,
-      "geoms": ["auto"],
+      "geoms": [
+        "auto"
+      ],
       "coordSystem": "generic",
       "limit": -1,
       "timezoneDisplayOffset": 0
@@ -696,7 +714,9 @@
           "offset": 0,
           "rule": {
             "type": "one of",
-            "value": ["2023-09-25"]
+            "value": [
+              "2023-09-25"
+            ]
           }
         },
         {
@@ -709,7 +729,10 @@
           "offset": 0,
           "rule": {
             "type": "one of",
-            "value": ["chemise", "jean"]
+            "value": [
+              "chemise",
+              "jean"
+            ]
           }
         },
         {
@@ -735,7 +758,9 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["[{'id': 'pet', 'share': 1}]"]
+            "value": [
+              "[{'id': 'pet', 'share': 1}]"
+            ]
           }
         },
         {
@@ -777,13 +802,14 @@
       }
     },
     "visId": "gw_pQ_4",
-    "name": "PR340 vs Master"
+    "name": "TEST2"
   },
-
   {
     "config": {
       "defaultAggregated": true,
-      "geoms": ["auto"],
+      "geoms": [
+        "auto"
+      ],
       "coordSystem": "generic",
       "limit": -1,
       "timezoneDisplayOffset": 0
@@ -980,8 +1006,8 @@
           "analyticType": "dimension",
           "offset": 0,
           "rule": {
-            "type": "one of",
-            "value": ["2023-09-25"]
+            "type": "not in",
+            "value": []
           }
         },
         {
@@ -994,7 +1020,9 @@
           "offset": 0,
           "rule": {
             "type": "one of",
-            "value": ["chemise", "jean"]
+            "value": [
+              "chemise"
+            ]
           }
         },
         {
@@ -1020,7 +1048,9 @@
           "offset": 0,
           "rule": {
             "type": "not in",
-            "value": ["[{'id': 'pet', 'share': 1}]"]
+            "value": [
+              "[{'id': 'pet', 'share': 1}]"
+            ]
           }
         },
         {
@@ -1063,5 +1093,235 @@
     },
     "visId": "gw_pQ_4",
     "name": "PR340 vs Master par impact"
+  },
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": [
+        "auto"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "dragId": "gw_8mSb",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_vN_i",
+          "fid": "branch",
+          "name": "branch",
+          "basename": "branch",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_ynYB",
+          "fid": "product",
+          "name": "product",
+          "basename": "product",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_KJQP",
+          "fid": "materials",
+          "name": "materials",
+          "basename": "materials",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_vzzB",
+          "fid": "lifeCycleStep",
+          "name": "lifeCycleStep",
+          "basename": "lifeCycleStep",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_gLHm",
+          "fid": "lifeCycleStepCountry",
+          "name": "lifeCycleStepCountry",
+          "basename": "lifeCycleStepCountry",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_2mRH",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_mea_key_fid",
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "dragId": "gw_H4Of",
+          "fid": "mass",
+          "name": "mass",
+          "basename": "mass",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_yR-5",
+          "fid": "value",
+          "name": "value",
+          "basename": "value",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_8Mie",
+          "fid": "norm_value_ecs",
+          "name": "norm_value_ecs",
+          "basename": "norm_value_ecs",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "dragId": "gw_count_fid",
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "dragId": "gw_mea_val_fid",
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "dragId": "gw_JCSw",
+          "fid": "value",
+          "name": "value",
+          "basename": "value",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "dragId": "gw_wSpP",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "dragId": "gw_UgWv",
+          "fid": "date",
+          "name": "date",
+          "basename": "date",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": [
+              "2023-10-02",
+              "2023-09-25"
+            ]
+          }
+        },
+        {
+          "dragId": "gw_Ogzs",
+          "fid": "impact",
+          "name": "impact",
+          "basename": "impact",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "one of",
+            "value": [
+              "cch"
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      }
+    },
+    "visId": "gw_DhdN",
+    "name": "Chart 5"
   }
 ]
