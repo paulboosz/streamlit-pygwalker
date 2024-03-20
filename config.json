@@ -439,19 +439,6 @@
       "details": [],
       "filters": [
         {
-          "dragId": "gw_nN4v",
-          "fid": "lifeCycleStep",
-          "name": "lifeCycleStep",
-          "basename": "lifeCycleStep",
-          "semanticType": "nominal",
-          "analyticType": "dimension",
-          "offset": 0,
-          "rule": {
-            "type": "one of",
-            "value": ["Ennoblissement"]
-          }
-        },
-        {
           "dragId": "gw__3t8",
           "fid": "branch",
           "name": "branch",
@@ -792,6 +779,7 @@
     "visId": "gw_pQ_4",
     "name": "PR340 vs Master"
   },
+
   {
     "config": {
       "defaultAggregated": true,
